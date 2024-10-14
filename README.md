@@ -19,39 +19,12 @@
   "dna": ["ATGCGA","CAGTGC","TTATGT","AGAAGG","CCCCTA","TCACTG"]
 }
    ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-   ```sh
-   yarn install
-   ```
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### Usage
+### La API responderá con:
 
-1.Run project
+. 200 OK si la secuencia es de un mutante
+. 403 Forbidden si la secuencia no es de un mutante
 
-```sh
- npm run serve
-```
 
-## Authors
 
-👤 **Author1**
-
-- GitHub: [@user](https://github.com/user)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/user/)
-
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome!
-
-Feel free to check the [issues page](https://github.com/use/repository/issues).
-
-## Show your support
-
-Give a ⭐️ if you like this project!
-
-## Acknowledgments
