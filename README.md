@@ -1,15 +1,14 @@
 <a name="readme-top"></a>
 
-# Name Repository
+# Parcial 
 
-> Description.
+> Este proyecto implementa un sistema de detección de mutantes basado en secuencias de ADN.
 
-## Built With
+## Hecho con
 
-- Html
-- Css
-- JavaScript
-- Vue 
+- Java 
+- Spring Boot
+- Gradle
 
 
 ## Live Demo (if available)
@@ -27,13 +26,16 @@ To get a local copy up and running follow these simple example steps.
 --Composer 
 --Text editor (VsCode)
 
-### Install
+### Uso de la Api
 
-1. Clone the repo
-   ```sh
-   git clone git@github.com:gioudi/repository.git
+1. Para verificar una secuencia de ADN, envía una solicitud POST a /mutant/ con el siguiente formato JSON:
+   
+   ```json
+   {
+  "dna": ["ATGCGA","CAGTGC","TTATGT","AGAAGG","CCCCTA","TCACTG"]
+}
    ```
-2. Install NPM packages
+3. Install NPM packages
    ```sh
    npm install
    ```
