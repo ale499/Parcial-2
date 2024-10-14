@@ -32,13 +32,16 @@
  Respuesta exitosa
 - Codigo: 200 OK
 - cuerpo
-  ```json
-{
+
+   ```json
+   {
     "countMutantDna": 10,
     "countHumanDna": 20,
     "ratio": 0.5
-}
-   ```
+}  
+  
+
+
 
 
 
