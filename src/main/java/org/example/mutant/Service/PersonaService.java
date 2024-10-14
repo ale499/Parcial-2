@@ -16,11 +16,12 @@ public class PersonaService {
 
 
     public boolean Esmutante(String[] dna) {
+        int N = dna.length; // Obtener el tamaño de la matriz (NxN)
         int countDnaEquals = 0;
 
         // Verificaciones horizontales
-        for (int fil = 0; fil < 6; fil++) {
-            for (int i = 0; i < 3; i++) {
+        for (int fil = 0; fil < N; fil++) {
+            for (int i = 0; i <= N - 4; i++) {
                 if (dna[fil].charAt(i) == dna[fil].charAt(i + 1) &&
                         dna[fil].charAt(i + 1) == dna[fil].charAt(i + 2) &&
                         dna[fil].charAt(i + 2) == dna[fil].charAt(i + 3)) {
@@ -30,8 +31,8 @@ public class PersonaService {
         }
 
         // Verificaciones verticales
-        for (int col = 0; col < 6; col++) {
-            for (int i = 0; i < 3; i++) {
+        for (int col = 0; col < N; col++) {
+            for (int i = 0; i <= N - 4; i++) {
                 if (dna[i].charAt(col) == dna[i + 1].charAt(col) &&
                         dna[i + 1].charAt(col) == dna[i + 2].charAt(col) &&
                         dna[i + 2].charAt(col) == dna[i + 3].charAt(col)) {
@@ -41,8 +42,8 @@ public class PersonaService {
         }
 
         // Verificaciones diagonales (principales de izquierda a derecha)
-        for (int i = 0; i < 3; i++) {
-            for (int j = 0; j < 3; j++) {
+        for (int i = 0; i <= N - 4; i++) {
+            for (int j = 0; j <= N - 4; j++) {
                 if (dna[i].charAt(j) == dna[i + 1].charAt(j + 1) &&
                         dna[i + 1].charAt(j + 1) == dna[i + 2].charAt(j + 2) &&
                         dna[i + 2].charAt(j + 2) == dna[i + 3].charAt(j + 3)) {
@@ -52,8 +53,8 @@ public class PersonaService {
         }
 
         // Verificaciones diagonales (desde abajo hacia arriba, derecha a izquierda)
-        for (int i = 0; i < 3; i++) {
-            for (int j = 3; j < 6; j++) {
+        for (int i = 0; i <= N - 4; i++) {
+            for (int j = 3; j < N; j++) {
                 if (dna[i].charAt(j) == dna[i + 1].charAt(j - 1) &&
                         dna[i + 1].charAt(j - 1) == dna[i + 2].charAt(j - 2) &&
                         dna[i + 2].charAt(j - 2) == dna[i + 3].charAt(j - 3)) {
@@ -65,6 +66,7 @@ public class PersonaService {
         // Si se encuentran más de una secuencia mutante, devolver true
         return countDnaEquals > 1;
     }
+
 
     public  void verificarYGuardarMutante(Persona persona) {
         List<String> dna = persona.getAdn(); // Obtener las secuencias de ADN
