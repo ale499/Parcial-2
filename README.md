@@ -10,28 +10,12 @@
 - Spring Boot
 - Gradle
 
-
-## Live Demo (if available)
-
-[Portfolio](https://gioudi.github.io/repository)
-
-## Getting Started
-
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
---Node 
---Npm 
---Composer 
---Text editor (VsCode)
-
 ### Uso de la Api
 
 1. Para verificar una secuencia de ADN, envía una solicitud POST a /mutant/ con el siguiente formato JSON:
    
-   ```json
-   {
+  ```json
+{
   "dna": ["ATGCGA","CAGTGC","TTATGT","AGAAGG","CCCCTA","TCACTG"]
 }
    ```
