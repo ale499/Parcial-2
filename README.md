@@ -23,8 +23,8 @@
 
 ### La API responderá con:
 
-. 200 OK si la secuencia es de un mutante
-. 403 Forbidden si la secuencia no es de un mutante
+- 200 OK si la secuencia es de un mutante
+- 403 Forbidden si la secuencia no es de un mutante
 
 
 
