@@ -26,5 +26,19 @@
 - 200 OK si la secuencia es de un mutante
 - 403 Forbidden si la secuencia no es de un mutante
 
+### Obtener Estadisticas
+
+1. Para obtener las estadisticas, envia una solicitud GET a /mutant/stats
+ Respuesta exitosa
+- Codigo: 200 OK
+- cuerpo
+  ```json
+{
+    "countMutantDna": 10,
+    "countHumanDna": 20,
+    "ratio": 0.5
+}
+   ```
+
 
 
