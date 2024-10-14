@@ -31,7 +31,7 @@
 1. Para obtener las estadisticas, envia una solicitud GET a /mutant/stats
  Respuesta exitosa
 - Codigo: 200 OK
-- cuerpo
+- Cuerpo
 
    ```json
    {
