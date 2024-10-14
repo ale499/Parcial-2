@@ -2,7 +2,9 @@ package org.example.mutant.Repositories;
 
 import org.example.mutant.Entities.Persona;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
+@Repository
 public interface PersonaRepository extends JpaRepository<Persona,Long> {
 
     // Contar personas que son mutantes

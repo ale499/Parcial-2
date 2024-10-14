@@ -111,8 +111,9 @@ public class PersonaService {
         // Retornamos las estadísticas
         return new Stats(countMutants, countHumans, ratio);
     }
-    public void save(Persona persona) {
+    public Persona save(Persona persona) {
         personaRepository.save(persona);  // Guardar la persona en la base de datos
+        return persona;
     }
 
 
